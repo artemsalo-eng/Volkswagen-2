@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volkswagen Україна — Офіційний огляд моделей та ШІ-консультант</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Навігація (Bootstrap + Flexbox) -->
+  <header class="navbar navbar-expand-lg navbar-dark vw-header sticky-top px-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="#">
+        <span class="vw-logo-circle">VW</span>
+        <span>Volkswagen</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto d-flex gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#about">Про бренд</a></li>
+          <li class="nav-item"><a class="nav-link" href="#models">Модельний ряд</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ai-consultant">ШІ-консультант</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Головний банер (Flexbox) -->
+  <section class="vw-hero d-flex align-items-center text-white">
+    <div class="container py-5">
+      <div class="col-lg-7">
+        <span class="badge bg-info text-dark mb-3">Das Auto • Інновації та надійність</span>
+        <h1 class="display-4 fw-bold mb-3">Рух у майбутнє разом із Volkswagen</h1>
+        <p class="lead mb-4">
+          Від легендарного Golf та універсального Tiguan до повністю електричної лінійки ID. Оберіть свій ідеальний автомобіль за допомогою нашого ШІ-консультанта.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#models" class="btn btn-light btn-lg fw-semibold">Переглянути моделі</a>
+          <a href="#ai-consultant" class="btn btn-outline-light btn-lg">Запитати ШІ-консультанта</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    <!-- Про компанію (Bootstrap Grid) -->
+    <section id="about" class="mb-5">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <h2 class="fw-bold text-vw-dark mb-3">Про компанію Volkswagen</h2>
+          <p>
+            <strong>Volkswagen</strong> (у перекладі з німецької — «народний автомобіль») — один із найбільших світових автовиробників, заснований у 1937 році в Німеччині зі штаб-квартирою у місті Вольфсбург.
+          </p>
+          <p class="mb-3">
+            Бренд поєднує німецьку інженерну точність, високі стандарти безпеки, економічні двигуни TSI/TDI та сучасні електромобілі платформи MEB.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-number">1937</span>
+              <span class="stat-label">Рік заснування</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">100+</span>
+              <span class="stat-label">Країн світу</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">ID.</span>
+              <span class="stat-label">Електромобілі</span>
+            </div>
+            <div class="stat-box">
+              <span class="stat-number">5 ★</span>
+              <span class="stat-label">Безпека Euro NCAP</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img
+            src="https://media.gettyimages.com/id/2284745533/photo/the-volkswagen-ag-headquarters-and-factory-in-wolfsburg-germany-on-thursday-july-9-2026.jpg?s=612x612&w=gi&k=20&c=obBxRiGIHFKOHl4AxhnWxjBu0T6gMj1jWFXddqOviwk="
+            alt="Автомобілі Volkswagen"
+            class="img-fluid rounded-4 shadow-sm about-photo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Модельний ряд з реальними фотографіями (CSS Grid + Flexbox) -->
+    <section id="models" class="mb-5">
+      <div class="d-flex justify-content-between align-items-end flex-wrap mb-4">
+        <div>
+          <h2 class="fw-bold text-vw-dark mb-1">Популярний модельний ряд</h2>
+          <p class="text-muted mb-0">Актуальні моделі для міста, подорожей та бізнесу</p>
+        </div>
+      </div>
+
+      <div class="models-grid">
+        <article class="model-card">
+          <div class="model-img-wrap">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-AndInFDgfDID_ZyDpejuWPtQp2Rbxahx258sbCMfHg&s=10" alt="Volkswagen Golf"
+              alt="Volkswagen Golf"
+              class="model-img"
+            />
+          </div>
+          <div class="model-body d-flex flex-column flex-grow-1">
+            <div class="model-badge">Хетчбек</div>
+            <h3>Volkswagen Golf</h3>
+            <p class="text-muted">Еталон C-класу з цифровим кокпітом, економічними двигунами 1.5 TSI та бездоганною керованістю.</p>
+            <ul class="model-specs">
+              <li>Потужність: 150 к.с.</li>
+              <li>Витрата пального: 5.4 л / 100 км</li>
+              <li>Ціна: від 1 180 000 грн</li>
+            </ul>
+            <button class="btn btn-vw mt-auto ask-ai-btn" data-question="Розкажи детальніше про Volkswagen Golf">
+              Запитати ШІ про Golf
+            </button>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-img-wrap">
+            <img
+              src="https://cdn.jdpower.com/JDPA_2020%20Volkswagen%20Tiguan%20SEL%20Premium%20R-Line%20White%20Front%20View.jpg" alt="Volkswagen Tiguan"
+              alt="Volkswagen Tiguan"
+              class="model-img"
+            />
+          </div>
+          <div class="model-body d-flex flex-column flex-grow-1">
+            <div class="model-badge">Кросовер</div>
+            <h3>Volkswagen Tiguan</h3>
+            <p class="text-muted">Сімейний кросовер із повним приводом 4MOTION, матричними фарами IQ.LIGHT та просторим багажником.</p>
+            <ul class="model-specs">
+              <li>Потужність: 190–220 к.с.</li>
+              <li>Привід: Передній або 4MOTION</li>
+              <li>Ціна: від 1 650 000 грн</li>
+            </ul>
+            <button class="btn btn-vw mt-auto ask-ai-btn" data-question="Які переваги має Volkswagen Tiguan?">
+              Запитати ШІ про Tiguan
+            </button>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-img-wrap">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92_aXn3LCkISpSCQeBz_oG__VC0UY0GvWChH-h4vkuA&s=10"
+              alt="Volkswagen Passat"
+              class="model-img"
+            />
+          </div>
+          <div class="model-body d-flex flex-column flex-grow-1">
+            <div class="model-badge">Бізнес-клас</div>
+            <h3>Volkswagen Passat</h3>
+            <p class="text-muted">Комфортний універсал для далеких поїздок із адаптивною підвіскою DCC та преміальною шумоізоляцією.</p>
+            <ul class="model-specs">
+              <li>Двигун: 2.0 TDI / 2.0 TSI</li>
+              <li>Об'єм багажника: 690 л</li>
+              <li>Ціна: від 1 790 000 грн</li>
+            </ul>
+            <button class="btn btn-vw mt-auto ask-ai-btn" data-question="Чим хороший новий Volkswagen Passat?">
+              Запитати ШІ про Passat
+            </button>
+          </div>
+        </article>
+
+        <article class="model-card">
+          <div class="model-img-wrap">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTCQoH0igqBjkerNKUTyJLz8Bg6Q859Nh3XSZAbrF3Q&s=10" alt="Volkswagen ID.4"
+              alt="Volkswagen ID.4"
+              class="model-img"
+            />
+          </div>
+          <div class="model-body d-flex flex-column flex-grow-1">
+            <div class="model-badge bg-success text-white">Електромобіль</div>
+            <h3>Volkswagen ID.4</h3>
+            <p class="text-muted">Повністю електричний кросовер із запасом ходу до 520 км (WLTP) та швидкою зарядкою до 80% за 30 хв.</p>
+            <ul class="model-specs">
+              <li>Батарея: 77 кВт·год</li>
+              <li>Запас ходу: до 520 км</li>
+              <li>Ціна: від 1 490 000 грн</li>
+            </ul>
+            <button class="btn btn-vw mt-auto ask-ai-btn" data-question="Який запас ходу та зарядка у Volkswagen ID.4?">
+              Запитати ШІ про ID.4
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Фотогалерея бренду (CSS Grid) -->
+    <section id="gallery" class="mb-5">
+      <h2 class="fw-bold text-vw-dark mb-1">Галерея Volkswagen</h2>
+      <p class="text-muted mb-4">Дизайн, інтер'єр та класика бренду</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item m-0">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-AndInFDgfDID_ZyDpejuWPtQp2Rbxahx258sbCMfHg&s=10" alt="Volkswagen Golf" />
+          <figcaption>Легендарний Golf</figcaption>
+        </figure>
+        <figure class="gallery-item m-0">
+          <img src="https://cdn.jdpower.com/JDPA_2020%20Volkswagen%20Tiguan%20SEL%20Premium%20R-Line%20White%20Front%20View.jpg" alt="Volkswagen Tiguan" />
+          <figcaption>Універсальний Tiguan</figcaption>
+        </figure>
+        <figure class="gallery-item m-0">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTCQoH0igqBjkerNKUTyJLz8Bg6Q859Nh3XSZAbrF3Q&s=10" alt="Volkswagen ID.4" />
+          <figcaption>Сучасний електрокросовер ID.4</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ШІ-консультант -->
+    <section id="ai-consultant" class="ai-section p-4 p-md-5 rounded-4">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h2 class="fw-bold text-vw-dark">ШІ-консультант Volkswagen</h2>
+          <p class="text-muted">
+            Віртуальний асистент допоможе підібрати модель під ваш бюджет, порівняти двигуни, дізнатися про гарантію або записатися на тест-драйв.
+          </p>
+          <div class="d-flex flex-column gap-2">
+            <small class="fw-semibold text-uppercase text-muted">Швидкі запитання:</small>
+            <button type="button" class="btn btn-outline-primary btn-sm text-start quick-q">Який кросовер обрати для сім'ї?</button>
+            <button type="button" class="btn btn-outline-primary btn-sm text-start quick-q">Яка гарантія на авто Volkswagen?</button>
+            <button type="button" class="btn btn-outline-primary btn-sm text-start quick-q">Що краще: дизель TDI чи електро ID.4?</button>
+            <button type="button" class="btn btn-outline-primary btn-sm text-start quick-q">Як записатися на тест-драйв?</button>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="chat-window d-flex flex-column">
+            <div id="chat-log" class="chat-log mb-3">
+              <div class="msg ai-msg">
+                Вітаю! Я віртуальний консультант <strong>Volkswagen</strong>. Запитайте мене про моделі (Golf, Tiguan, Passat, ID.4), ціни, витрату пального чи умови сервісу.
+              </div>
+            </div>
+            <form id="chat-form" class="d-flex gap-2">
+              <input
+                id="chat-input"
+                type="text"
+                class="form-control"
+                placeholder="Наприклад: Яка ціна та характеристики Tiguan?"
+                required
+              />
+              <button type="submit" class="btn btn-vw px-4">Надіслати</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="vw-footer text-white py-4 mt-5">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <span>© 2026 Volkswagen Fan & Demo Portal. Навчальний проєкт.</span>
+      <span class="small text-white-50">HTML5 • CSS3 (Flexbox & Grid) • Bootstrap 5 • AI Consultant</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

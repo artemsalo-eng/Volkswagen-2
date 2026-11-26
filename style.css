@@ -1,0 +1,241 @@
+:root {
+  --vw-dark: #001e50;
+  --vw-blue: #00437a;
+  --vw-accent: #00b0f0;
+  --vw-bg: #f4f7fa;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.text-vw-dark {
+  color: var(--vw-dark);
+}
+
+/* Шапка та логотип */
+.vw-header {
+  background-color: var(--vw-dark);
+}
+
+.vw-logo-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+/* Головний банер */
+.vw-hero {
+  min-height: 460px;
+  background: linear-gradient(120deg, rgba(0, 30, 80, 0.9), rgba(0, 67, 122, 0.72)),
+    url("https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1500&q=80")
+      center/cover no-repeat;
+}
+
+/* Фото в блоці про бренд */
+.about-photo {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+/* Сітка статистики (CSS Grid) */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--vw-bg);
+  border-left: 4px solid var(--vw-dark);
+  border-radius: 0.5rem;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--vw-dark);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+/* Сітка моделей з фото (CSS Grid + Flexbox) */
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.model-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dce3ec;
+  border-radius: 0.75rem;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.model-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 30, 80, 0.12);
+}
+
+.model-img-wrap {
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background-color: #e5e7eb;
+}
+
+.model-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.model-card:hover .model-img {
+  transform: scale(1.05);
+}
+
+.model-body {
+  padding: 1.35rem;
+}
+
+.model-badge {
+  align-self: flex-start;
+  padding: 0.25rem 0.65rem;
+  margin-bottom: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--vw-dark);
+  background-color: #e0ecff;
+  border-radius: 999px;
+}
+
+.model-specs {
+  padding-left: 1.1rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.92rem;
+  color: #374151;
+}
+
+/* Фотогалерея (CSS Grid) */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  height: 240px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.65rem 1rem;
+  background: linear-gradient(transparent, rgba(0, 30, 80, 0.85));
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Фірмові кнопки */
+.btn-vw {
+  background-color: var(--vw-dark);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-vw:hover {
+  background-color: var(--vw-blue);
+  color: #ffffff;
+}
+
+/* Секція ШІ-консультанта */
+.ai-section {
+  background-color: var(--vw-bg);
+  border: 1px solid #d8e2ef;
+}
+
+.chat-window {
+  background: #ffffff;
+  border: 1px solid #d8e2ef;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.chat-log {
+  height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-right: 0.25rem;
+}
+
+.msg {
+  max-width: 82%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.ai-msg {
+  align-self: flex-start;
+  background-color: #eef4fc;
+  color: #0f172a;
+  border-bottom-left-radius: 0.2rem;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background-color: var(--vw-dark);
+  color: #ffffff;
+  border-bottom-right-radius: 0.2rem;
+}
+
+.vw-footer {
+  background-color: var(--vw-dark);
+}
